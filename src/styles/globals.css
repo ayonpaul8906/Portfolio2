@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #F8F9FA;
+  --text-color: #1A1A1A;
+  --text-muted: #070707;
+  --card-bg: #FFFFFF;
+  --card-border: rgba(0, 0, 0, 0.08);
+  --accent-color: #3b4bf6;
+  --border-accent: rgba(0, 0, 0, 0.12);
+  --text-glow-accent: #374151;
+  --text-glow-to: #000000;
+  --scroll-track: #F8F9FA;
+  --scroll-thumb: #D0D4DC;
+}
+
+:root.dark {
+  --bg-color: #0C0C0C;
+  --text-color: #D7E2EA;
+  --text-muted: rgba(215, 226, 234, 0.6);
+  --card-bg: #111111;
+  --card-border: rgba(255, 255, 255, 0.05);
+  --accent-color: #38bdf8;
+  --border-accent: rgba(215, 226, 234, 0.15);
+  --text-glow-accent: #646973;
+  --text-glow-to: #BBCCD7;
+  --scroll-track: #0C0C0C;
+  --scroll-thumb: #252528;
+}
+
+/* Global Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base Styles */
+html,
+body,
+#root,
+.main-wrapper {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-wrapper {
+  overflow-x: clip;
+}
+
+/* developer typography mappings */
+.font-mono {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+.bg-card {
+  background-color: var(--card-bg) !important;
+}
+
+.border-card {
+  border-color: var(--card-border) !important;
+}
+
+/* Custom Hero Heading Gradient */
+.hero-heading {
+  background: linear-gradient(180deg, var(--text-glow-accent) 0%, var(--text-glow-to) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Custom scrollbar to keep layout premium */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3e3e42;
+}
+
+/* Styles to prevent scrollbar jumping on scroll animations */
+.will-change-transform {
+  will-change: transform;
+}
+
+/* Continuous Marquee Animation */
+@keyframes marquee-left {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-marquee-left {
+  display: flex;
+  width: max-content;
+  animation: marquee-left 30s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-right {
+  display: flex;
+  width: max-content;
+  animation: marquee-right 30s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-left:hover,
+.animate-marquee-right:hover {
+  animation-play-state: paused;
+}
