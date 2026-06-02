@@ -8,24 +8,52 @@ export const ContactSection: React.FC = () => {
     subject: '',
     message: ''
   });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subjectLine = formData.subject || 'Portfolio Inquiry';
-    const bodyContent = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
-    const mailtoUri = `mailto:ayonpaul8906@gmail.com?subject=${encodeURIComponent(subjectLine)}&body=${encodeURIComponent(bodyContent)}`;
-    
-    const link = document.createElement('a');
-    link.href = mailtoUri;
-    link.target = '_blank';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    if (loading) return;
+    setLoading(true);
+
+    const data = {
+      name: formData.name,
+      email: formData.email,
+      _subject: formData.subject || "New Contact Form Submission",
+      message: formData.message,
+    };
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/ayonpaul8906@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        alert("Message sent successfully!");
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -198,9 +226,10 @@ export const ContactSection: React.FC = () => {
 
               <button
                 type="submit"
-                className="mt-2 w-full py-3.5 sm:py-4 rounded-xl border border-[var(--text-color)] text-[var(--bg-color)] bg-[var(--text-color)] hover:bg-transparent hover:text-[var(--text-color)] transition-all duration-300 font-bold uppercase tracking-widest text-xs shadow-xl cursor-pointer"
+                disabled={loading}
+                className="mt-2 w-full py-3.5 sm:py-4 rounded-xl border border-[var(--text-color)] text-[var(--bg-color)] bg-[var(--text-color)] hover:bg-transparent hover:text-[var(--text-color)] transition-all duration-300 font-bold uppercase tracking-widest text-xs shadow-xl cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
+                {loading ? "Sending..." : "Send Message"}
               </button>
             </form>
           </FadeIn>

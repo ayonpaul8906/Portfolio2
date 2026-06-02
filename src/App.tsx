@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import HeroSection from './components/sections/HeroSection';
 import MarqueeSection from './components/sections/MarqueeSection';
 import AboutSection from './components/sections/AboutSection';
@@ -10,6 +10,7 @@ import JourneySection from './components/sections/JourneySection';
 import CertificationsSection from './components/sections/CertificationsSection';
 import ContactSection from './components/sections/ContactSection';
 import ResumeModal from './components/ui/ResumeModal';
+import CustomCursor from './components/ui/CustomCursor';
 import './styles/globals.css';
 
 export default function App() {
@@ -46,6 +47,7 @@ export default function App() {
       <CertificationsSection />
       <ContactSection />
       <ResumeModal />
+      <CustomCursor />
 
       {/* Floating Theme Toggle Button */}
       <button
