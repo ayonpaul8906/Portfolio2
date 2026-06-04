@@ -64,9 +64,7 @@ const SKILLS_DATA: Record<CategoryType, TechSkill[]> = {
       color: '#3178c6',
       bgGlow: 'rgba(49, 120, 198, 0.08)',
       svg: (
-        <svg viewBox="0 0 24 24" className="w-10 h-10 text-[#3178c6] fill-current" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0H1.125zm14.595 12.188c.18 0 .346.009.5.027.153.018.306.054.459.108.153.054.306.126.459.216.153.09.288.207.405.35.117.144.216.315.297.513.081.198.122.423.122.675 0 .288-.05.545-.149.77-.099.225-.238.414-.418.567-.18.153-.396.265-.648.337-.252.072-.531.108-.837.108-.225 0-.464-.023-.716-.068-.252-.045-.49-.117-.715-.216a4.4 4.4 0 0 1-.621-.351l.9-.99c.144.117.297.216.459.297.162.081.333.122.513.122.18 0 .324-.045.432-.135.108-.09.162-.216.162-.378 0-.126-.036-.225-.108-.297-.072-.072-.162-.126-.27-.162-.108-.036-.225-.063-.351-.081a5.952 5.952 0 0 1-.396-.067c-.207-.045-.4-.117-.58-.216a2.04 2.04 0 0 1-.495-.392c-.135-.153-.243-.346-.324-.58-.081-.234-.122-.518-.122-.85 0-.315.054-.599.162-.85.108-.252.261-.464.459-.635.198-.171.437-.301.716-.391.279-.09.585-.135.918-.135.234 0 .468.027.702.081.234.054.454.135.661.243.207.108.396.243.567.405l-.837.936a2.38 2.38 0 0 0-.486-.297 1.528 1.528 0 0 0-.585-.099c-.198 0-.356.045-.473.135-.117.09-.175.225-.175.405 0 .126.036.225.108.297.072.072.167.126.284.162.117.036.243.063.378.081.135.018.265.04.391.068zm-5.067-2.313H14.13V20h-2.385v-7.938H9.36v-2.187z" />
-        </svg>
+        <img src="/tech/ts.png" alt="TS Logo" className="w-10 h-10" />
       )
     },
     {
@@ -76,9 +74,7 @@ const SKILLS_DATA: Record<CategoryType, TechSkill[]> = {
       color: '#f59e0b',
       bgGlow: 'rgba(245, 158, 11, 0.08)',
       svg: (
-        <svg viewBox="0 0 24 24" className="w-10 h-10 text-[#f59e0b] fill-current" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 0h24v24H0V0zm22.034 18.5c0-1.504-.905-2.506-2.527-2.506-1.547 0-2.368.807-2.738 1.777l1.79.94c.26-.52.54-.863 1.008-.863.398 0 .684.2.684.58 0 .753-.943.918-1.745 1.15-.99.288-2.116.732-2.116 2.453 0 1.554 1.124 2.47 2.62 2.47 1.253 0 2.062-.602 2.447-1.42h.036l.245 1.18h1.666V18.5zM12.923 20.315c0-2.454-1.282-3.69-3.21-3.69-1.928 0-3.23 1.236-3.23 3.69 0 2.448 1.302 3.684 3.23 3.684 1.928 0 3.21-1.236 3.21-3.684zm-2.096 0c0 1.267-.61 1.9-1.114 1.9-.504 0-1.114-.633-1.114-1.9 0-1.267.61-1.9 1.114-1.9.504 0 1.114.633 1.114 1.9z" />
-        </svg>
+        <img src="/tech/js.png" alt="JS Logo" className="w-10 h-10" />
       )
     },
     {
@@ -102,9 +98,7 @@ const SKILLS_DATA: Record<CategoryType, TechSkill[]> = {
       color: '#3776ab',
       bgGlow: 'rgba(55, 118, 171, 0.08)',
       svg: (
-        <svg viewBox="0 0 24 24" className="w-10 h-10 text-[#3776ab] fill-current" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.547 3.328c.451 0 .813.363.813.813s-.363.813-.813.813-.813-.363-.813-.813.363-.813.813-.813zm5.094 15.11c-.451 0-.813-.363-.813-.813s.363-.813.813-.813.813.363.813.813-.362.813-.813.813zm.859-3.797H12.03v-1.125h3.047a2.03 2.03 0 0 0 2.031-2.031v-2.031h-1.125V12.5a.906.906 0 0 1-.906.906H9.998v-3.047a2.03 2.03 0 0 0-2.031-2.031H5.936v1.125h2.031a.906.906 0 0 1 .906.906v4.172c0 1.12.91 2.031 2.031 2.031h5.485v-1.125z" />
-        </svg>
+        <img src="/tech/python.png" alt="Python Logo" className="w-10 h-10" />
       )
     },
     {
@@ -114,9 +108,7 @@ const SKILLS_DATA: Record<CategoryType, TechSkill[]> = {
       color: '#4b5563',
       bgGlow: 'rgba(75, 85, 99, 0.05)',
       svg: (
-        <svg viewBox="0 0 24 24" className="w-10 h-10 text-current fill-none stroke-current" strokeWidth="1.5" xmlns="http://www.w3.org/2000/svg">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
+        <img src="/tech/flask.png" alt="Flask Logo" className="w-10 h-10" />
       )
     },
     {
@@ -126,9 +118,7 @@ const SKILLS_DATA: Record<CategoryType, TechSkill[]> = {
       color: '#339933',
       bgGlow: 'rgba(51, 153, 81, 0.08)',
       svg: (
-        <svg viewBox="0 0 24 24" className="w-10 h-10 text-[#339933] fill-current" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5zm4 4h-2v-5h2v5zm0-6h-2V7h2v3z" />
-        </svg>
+        <img src="/tech/nodejs.png" alt="Node.js Logo" className="w-10 h-10" />
       )
     },
     {
@@ -138,10 +128,7 @@ const SKILLS_DATA: Record<CategoryType, TechSkill[]> = {
       color: '#6b7280',
       bgGlow: 'rgba(107, 114, 128, 0.05)',
       svg: (
-        <svg viewBox="0 0 24 24" className="w-10 h-10 text-current fill-none stroke-current" strokeWidth="2" xmlns="http://www.w3.org/2000/svg">
-          <rect x="2" y="2" width="20" height="20" rx="4" />
-          <path d="M7 8h10M7 12h10M7 16h5" />
-        </svg>
+        <img src="/tech/express.png" alt="Express.js Logo" className="w-10 h-10" />
       )
     },
     {
@@ -151,9 +138,7 @@ const SKILLS_DATA: Record<CategoryType, TechSkill[]> = {
       color: '#13aa52',
       bgGlow: 'rgba(19, 170, 82, 0.08)',
       svg: (
-        <svg viewBox="0 0 24 24" className="w-10 h-10 text-[#13aa52] fill-current" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 0C10.5 3 6 8.5 6 12s2.5 6.5 6 12c3.5-5.5 6-8.5 6-12s-4.5-9-6-12zm-1 12c0-1.5.5-3 1-3s1 1.5 1 3-.5 3-1 3-1-1.5-1-3z" />
-        </svg>
+        <img src="/tech/mongo.png" alt="MongoDB Logo" className="w-10 h-10" />
       )
     },
     {
@@ -163,10 +148,7 @@ const SKILLS_DATA: Record<CategoryType, TechSkill[]> = {
       color: '#00758f',
       bgGlow: 'rgba(0, 117, 143, 0.08)',
       svg: (
-        <svg viewBox="0 0 24 24" className="w-10 h-10 text-[#00758f] fill-none stroke-current" strokeWidth="2" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="12" cy="5" rx="8" ry="3" />
-          <path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" />
-        </svg>
+        <img src="/tech/mysql.png" alt="MySQL Logo" className="w-10 h-10" />
       )
     },
     {
@@ -190,9 +172,7 @@ const SKILLS_DATA: Record<CategoryType, TechSkill[]> = {
       color: '#f59e0b',
       bgGlow: 'rgba(245, 158, 11, 0.08)',
       svg: (
-        <svg viewBox="0 0 24 24" className="w-10 h-10 text-[#f59e0b] fill-current" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 0h24v24H0V0zm22.034 18.5c0-1.504-.905-2.506-2.527-2.506-1.547 0-2.368.807-2.738 1.777l1.79.94c.26-.52.54-.863 1.008-.863.398 0 .684.2.684.58 0 .753-.943.918-1.745 1.15-.99.288-2.116.732-2.116 2.453 0 1.554 1.124 2.47 2.62 2.47 1.253 0 2.062-.602 2.447-1.42h.036l.245 1.18h1.666V18.5zM12.923 20.315c0-2.454-1.282-3.69-3.21-3.69-1.928 0-3.23 1.236-3.23 3.69 0 2.448 1.302 3.684 3.23 3.684 1.928 0 3.21-1.236 3.21-3.684zm-2.096 0c0 1.267-.61 1.9-1.114 1.9-.504 0-1.114-.633-1.114-1.9 0-1.267.61-1.9 1.114-1.9.504 0 1.114.633 1.114 1.9z" />
-        </svg>
+        <img src="/tech/js.png" alt="JavaScript Logo" className="w-10 h-10" />
       )
     },
     {
@@ -202,9 +182,7 @@ const SKILLS_DATA: Record<CategoryType, TechSkill[]> = {
       color: '#3776ab',
       bgGlow: 'rgba(55, 118, 171, 0.08)',
       svg: (
-        <svg viewBox="0 0 24 24" className="w-10 h-10 text-[#3776ab] fill-current" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.547 3.328c.451 0 .813.363.813.813s-.363.813-.813.813-.813-.363-.813-.813.363-.813.813-.813zm5.094 15.11c-.451 0-.813-.363-.813-.813s.363-.813.813-.813.813.363.813.813-.362.813-.813.813zm.859-3.797H12.03v-1.125h3.047a2.03 2.03 0 0 0 2.031-2.031v-2.031h-1.125V12.5a.906.906 0 0 1-.906.906H9.998v-3.047a2.03 2.03 0 0 0-2.031-2.031H5.936v1.125h2.031a.906.906 0 0 1 .906.906v4.172c0 1.12.91 2.031 2.031 2.031h5.485v-1.125z" />
-        </svg>
+        <img src="/tech/python.png" alt="Python Logo" className="w-10 h-10" />
       )
     },
     {
@@ -214,9 +192,7 @@ const SKILLS_DATA: Record<CategoryType, TechSkill[]> = {
       color: '#00599c',
       bgGlow: 'rgba(0, 89, 156, 0.08)',
       svg: (
-        <svg viewBox="0 0 24 24" className="w-10 h-10 text-[#00599c] fill-current" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c3.2 0 6.05-1.5 7.89-3.87l-2.43-1.62C16.1 18.06 14.18 19 12 19c-3.86 0-7-3.14-7-7s3.14-7 7-7c2.18 0 4.1 0.94 5.46 2.49l2.43-1.62C18.05 3.5 15.2 2 12 2z" />
-        </svg>
+        <img src="/tech/C.png" alt="C Logo" className="w-10 h-10" />
       )
     },
     {
@@ -226,9 +202,7 @@ const SKILLS_DATA: Record<CategoryType, TechSkill[]> = {
       color: '#ea2d2e',
       bgGlow: 'rgba(234, 45, 46, 0.08)',
       svg: (
-        <svg viewBox="0 0 24 24" className="w-10 h-10 text-[#ea2d2e] fill-none stroke-current" strokeWidth="2" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5 10h11v5a4 4 0 01-4 4H9a4 4 0 01-4-4v-5zM16 11h2a2 2 0 012 2v0a2 2 0 01-2 2h-2M9 2v4M12 2v4" />
-        </svg>
+        <img src="/tech/java.png" alt="Java Logo" className="w-10 h-10" />
       )
     },
     {
@@ -253,9 +227,7 @@ const SKILLS_DATA: Record<CategoryType, TechSkill[]> = {
       color: '#f59e0b',
       bgGlow: 'rgba(245, 158, 11, 0.08)',
       svg: (
-        <svg viewBox="0 0 24 24" className="w-10 h-10 text-[#f59e0b] fill-current" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3.89 15.75L9.61 4.33a.62.62 0 0 1 1.13 0l2.36 4.72-9.21 6.7zm16.22-1.34l-2.77-5.26-2.52 4.79 5.29.47zm-1.07 3.01l-7.23-4.29-2.31 4.39 9.54-.1z" />
-        </svg>
+        <img src="/tech/firebase.png" alt="Firebase Logo" className="w-10 h-10" />
       )
     },
     {
@@ -277,9 +249,7 @@ const SKILLS_DATA: Record<CategoryType, TechSkill[]> = {
       color: '#2496ed',
       bgGlow: 'rgba(36, 150, 237, 0.08)',
       svg: (
-        <svg viewBox="0 0 24 24" className="w-10 h-10 text-[#2496ed] fill-current" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.983 8.871h-1.993v1.993h1.993v-1.993zm-2.99 0h-1.993v1.993h1.993v-1.993zm-2.99 0h-1.993v1.993h1.993v-1.993zm-2.991 0h-1.993v1.993h1.993v-1.993zm11.972-2.99h-1.993v1.993h1.993v-1.993zm-2.99 0h-1.993v1.993h1.993v-1.993zm-2.99 0h-1.993v1.993h1.993v-1.993zm10.973 5.98h-1.993v1.993h1.993v-1.993zm-20.975.996c0 2.223 1.764 4.024 3.93 4.024h12.576c2.166 0 3.93-1.801 3.93-4.024v-1.006H0v1.006z" />
-        </svg>
+        <img src="/tech/docker.png" alt="Docker Logo" className="w-10 h-10" />
       )
     },
     {
@@ -289,9 +259,7 @@ const SKILLS_DATA: Record<CategoryType, TechSkill[]> = {
       color: '#000000',
       bgGlow: 'rgba(0, 0, 0, 0.05)',
       svg: (
-        <svg viewBox="0 0 24 24" className="w-10 h-10 text-current fill-current" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 1L24 22H0L12 1z" />
-        </svg>
+        <img src="/tech/vercel.png" alt="Vercel Logo" className="w-9 h-9" />
       )
     },
     {
@@ -301,10 +269,7 @@ const SKILLS_DATA: Record<CategoryType, TechSkill[]> = {
       color: '#46e3b7',
       bgGlow: 'rgba(70, 227, 183, 0.08)',
       svg: (
-        <svg viewBox="0 0 24 24" className="w-10 h-10 text-[#46e3b7] fill-none stroke-current" strokeWidth="2" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2L2 22h20L12 2z" strokeLinejoin="round" />
-          <circle cx="12" cy="12" r="3" className="fill-current" />
-        </svg>
+        <img src="/tech/render.png" alt="Render Logo" className="w-10 h-10" />
       )
     },
     {
@@ -314,9 +279,7 @@ const SKILLS_DATA: Record<CategoryType, TechSkill[]> = {
       color: '#ff6c37',
       bgGlow: 'rgba(255, 108, 55, 0.08)',
       svg: (
-        <svg viewBox="0 0 24 24" className="w-10 h-10 text-[#ff6c37] fill-none stroke-current" strokeWidth="2" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2 12h20M12 2l10 10-10 10" />
-        </svg>
+        <img src="/tech/postman.png" alt="Postman Logo" className="w-10 h-10" />
       )
     }
   ]
