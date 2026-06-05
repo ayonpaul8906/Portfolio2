@@ -119,7 +119,7 @@ export const AboutSection: React.FC = () => {
             <FadeIn
               delay={0.15}
               y={30}
-              className="flex flex-col gap-5 text-sm sm:text-base text-[var(--text-color)] opacity-80 font-light leading-relaxed mb-8 text-justify"
+              className="flex flex-col gap-5 text-xs sm:text-sm text-[var(--text-color)] opacity-80 font-light leading-relaxed mb-8 text-justify"
             >
               <p>
                 I’m a Full-Stack Developer and AI Engineer who loves building
